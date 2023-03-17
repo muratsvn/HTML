@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Forms</title>
+</head>
+<body>
+     <form action="">
+          <table>
+               <tr>
+                    <td><label for="ep">Eposta</label></td> <!-- Eposta yazısına tıklandığında yan taraf aktif hale gelir id ve for ile-->
+                    <td><input required type="email" name="eposta" id="ep" placeholder="infa@example.com"></td>
+               </tr>
+               <tr>
+                    <td><label for="sf">Şifre</label>
+                    <td><input minlength="3" maxlength="10" type="password" name="sifre" id="sf"></td>
+               </tr>
+               <tr>
+                    <td><label for="gk">Güvenlik kodu</label>
+                    <td><input type="number" min="20" max="30" name="kod" id="gk" value="123123" readonly></td>
+               </tr>
+               <tr>
+                    <td></td>
+                    <td>
+                         <button type="submit">Kaydet</button>
+                         <button type="reset">Temizle</button>
+                    </td>
+               </tr>
+          </table>
+     </form>
+</body>
+</html>

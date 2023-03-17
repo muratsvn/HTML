@@ -15,13 +15,65 @@
           <input type="password" name="pass"><br> <!-- girilen karakterleri göstermez-->
           <input type="search" name="search"> <br> <!-- karakter girildiğinde sonda X işareti çıkar-->
           <input type="url" name="website"><br>
-          <input type="tel" name="phone"> <br> mmmmmm
+          <input type="tel" name="phone"> <br> 
           <input type="hidden"> <!-- kullanıcının görmesine gerek olmayan alanı göstermez-->
 
+          <input type="checkbox" name="user" id="usr"/> <!-- yazıya tıkladığında kutucuğu işaretler-->
+                 <label for="usr">Kullanıcı sözleşmesini okudum</label>  <br>
+          <input type="checkbox" name="sales" id="sl"/>
+                 <label for="sl">Satış sözleşmesini okudum</label>  <br>
 
-          <input type="button" value="Custom">
-          <input type="submit" value="Save">
-          <input type="reset" value="Reset">
+          <input type="radio" name="gender" id="genderM" checked> <!-- checked default olarak işaretli gelir-->
+          <label for="">Male</label>
+
+          <input type="radio" name="gender" id="genderF">
+          <label for="">Female</label> <br>
+
+
+          <input type="file" name="avatar"> <br> <!-- dosya seçilmesi-->
+
+
+          <input type="color" name="renk"> <br>
+
+
+          <input type="range" name="salary"> <br>
+
+
+          <input type="date" name="dogum"> <br>
+
+
+          <input type="time" name="departureTime"> <br>
+
+
+          <input type="datetime-local" name="dt"> <br>
+
+
+          <input type="month" name="mn" > <br>
+
+
+          <input type="week" name="wk" > <br>
+
+
+
+          <select name="city">
+               <option value="" disabled selected>Seçiniz</option>
+               <option value="34">İstanbul</option> <!-- value içindeki değer backend e gider-->
+               <option value="35">İzmir</option>
+               <option value="06">Ankara</option>
+          </select><br>
+
+          <select name="country" size="5" multiple>
+               <option value="34">Türkiye</option> <!-- value içindeki değer backend e gider-->
+               <option value="35">Germany</option>
+               <option value="06">France</option>
+          </select>
+
+
+          <textarea name="" id="" cols="30" rows="5"></textarea>
+
+          <input type="button" value="Custom"> <!-- js ile görevlerini bildiriyoruz-->
+          <input type="submit" value="Save"> <!-- görevleri hazır, form daki bilgileri paketleyip backend e gönderir-->
+          <input type="reset" value="Reset"><!-- görevleri hazır-->
      </form>
 
 </body>

@@ -9,10 +9,13 @@
 <body>
      
      <form method="post" action="/account/login"> <!-- endpoint @GetMapping, @PostMapping vb.-->
-          <label>Email</label>
-          <input type="text">
+          <label>Email</label> <!-- kullanıcıya bilgi verir -->
+          <input type="text"><!-- kullanıcı girer-->
           <input type="button" value="Kaydet">
      </form>
+     <form enctype="multipart/form-data"></form> <!-- datanın encode işlemi, 
+          dosya upload işlemlerinde multipart/form-data değerini alması gerekir
+          novalidate ise HTML5 ile gelen form handler ı devre dışı bırakır-->
 
 </body>
 </html>
